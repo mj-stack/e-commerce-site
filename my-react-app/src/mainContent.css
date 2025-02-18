@@ -1,0 +1,146 @@
+.mainContent {
+  /* background-color: aqua; */
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;
+}
+
+.product-type {
+  display: flex;
+  justify-content: space-around;
+}
+
+.clothes-center {
+  border-bottom: 2px solid blue;
+  color: black;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.shoes-center {
+  color: black;
+  padding: 10px 15px;
+  cursor: pointer;
+  /* transition: border 1s; */
+}
+
+.shoes-center:hover {
+  border-bottom: 2px solid blue;
+}
+
+.accessories-center {
+  color: black;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.accessories-center:hover {
+  border-bottom: 2px solid blue;
+}
+
+.products-grid {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  row-gap: 40px;
+}
+
+.product-card {
+  height: 400px;
+  width: 250px;
+  box-shadow: 0 0 12px hsl(240, 90%, 68%);
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.product-img-div {
+  /* border: 1px solid; */
+  flex: 2;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-info-div {
+  flex: 1;
+}
+
+/* .product-info-div p{
+  margin: 0;
+} */
+
+.item-title {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.item-price {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: gray;
+}
+
+.item-controls {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.fav-item {
+  margin-right: 5px;
+  flex: 1;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(45deg, red, pink);
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.fav-item:hover {
+  opacity: 0.9;
+}
+
+.fav-item:active {
+  opacity: 0.8;
+}
+
+.add-to-cart {
+  flex: 2;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, blue, lightblue);
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.add-to-cart:hover {
+  opacity: 0.9;
+}
+
+.add-to-cart:active {
+  opacity: 0.9;
+}
