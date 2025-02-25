@@ -1,0 +1,38 @@
+.link-text {
+  text-decoration: none;
+  color: blue;
+}
+
+.product-type {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 100px;
+}
+
+.clothes-center {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.clothes-center:hover {
+  border-bottom: 2px solid blue;
+}
+
+.shoes-center {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.shoes-center:hover {
+  border-bottom: 2px solid blue;
+}
+
+.accessories-center {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.accessories-center:hover {
+  border-bottom: 2px solid blue;
+}

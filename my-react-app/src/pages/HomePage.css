@@ -1,43 +1,10 @@
 .mainContent {
   /* background-color: aqua; */
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 50px;
   margin-left: 50px;
   margin-right: 50px;
   padding: 30px;
-}
-
-.product-type {
-  display: flex;
-  justify-content: space-around;
-}
-
-.clothes-center {
-  border-bottom: 2px solid blue;
-  color: black;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.shoes-center {
-  color: black;
-  padding: 10px 15px;
-  cursor: pointer;
-  /* transition: border 1s; */
-}
-
-.shoes-center:hover {
-  border-bottom: 2px solid blue;
-}
-
-.accessories-center {
-  color: black;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.accessories-center:hover {
-  border-bottom: 2px solid blue;
 }
 
 .products-grid {

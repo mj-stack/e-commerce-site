@@ -1,31 +1,20 @@
-import './HomePage.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import shirtImg from '../assets/white-tshirt.jpg'
-import jeansImg from '../assets/ripped-jeans.jpg'
-import checkShirt from '../assets/blue-checkshirt.jpg'
-import blackShirt from '../assets/black-tshirt.jpg'
-import redCheckShirt from '../assets/red-checkshirt.jpg'
-import blueJeans from '../assets/blue-jeans.jpg'
-import yellowHoodie from '../assets/yellow-hoodie.jpg'
-import blackTurtleneck from '../assets/black-turtleneck.jpg'
+import { Categories } from '../components/Categories'
+import './HomePage.css'
 
 function HomePage() {
 
   return(
     <>
       <Header />
+      <Categories />
 
       <main className="mainContent">
-        <div className='product-type'>
-          <div className='clothes-center'>Clothes</div>
-          <div className='shoes-center'>Shoes</div>
-          <div className='accessories-center'>Accessories</div>
-        </div>
         <div className="products-grid">
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={shirtImg} alt="" />
+              <img className='product-img' src="images/white-tshirt.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Plain White T-shirt</p>
@@ -38,7 +27,7 @@ function HomePage() {
           </div>
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={jeansImg} alt="" />
+              <img className='product-img' src="images/ripped-jeans.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Blue Ripped Jeans</p>
@@ -51,7 +40,7 @@ function HomePage() {
           </div>
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={checkShirt} alt="" />
+              <img className='product-img' src="images/blue-checkshirt.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Blue Checked Shirt</p>
@@ -64,7 +53,7 @@ function HomePage() {
           </div>
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={blackShirt} alt="" />
+              <img className='product-img' src="images/black-tshirt.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Plain Black T-shirt</p>
@@ -77,7 +66,7 @@ function HomePage() {
           </div>
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={redCheckShirt} alt="" />
+              <img className='product-img' src="images/red-checkshirt.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Red Checked Shirt</p>
@@ -90,7 +79,7 @@ function HomePage() {
           </div>
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={blueJeans} alt="" />
+              <img className='product-img' src="images/blue-jeans.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Dark Blue Jeans</p>
@@ -103,7 +92,7 @@ function HomePage() {
           </div>
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={yellowHoodie} alt="" />
+              <img className='product-img' src="images/yellow-hoodie.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Yello Hoodie</p>
@@ -116,7 +105,7 @@ function HomePage() {
           </div>
           <div className="product-card">
             <div className="product-img-div">
-              <img className='product-img' src={blackTurtleneck} alt="" />
+              <img className='product-img' src="images/black-turtleneck.jpg" alt="" />
             </div>
             <div className="product-info-div">
               <p className='item-title'>Black Turtleneck</p>

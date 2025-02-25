@@ -1,7 +1,8 @@
+import { Link } from 'react-router';
 import './Header.css'
-import searchSvg from '../assets/icons8-search-48.png';
-import profileIcon from '../assets/profile.png';
-import cartIcon from '../assets/icons8-cart-94.png';
+import searchSvg from '../assets/icons/icons8-search-48.png';
+import profileIcon from '../assets/icons/profile.png';
+import cartIcon from '../assets/icons/icons8-cart-94.png';
 
 function Header() {
 
@@ -9,11 +10,11 @@ function Header() {
     <>
       <header>
         <section className="left-section">
-          <div className="brand-title1">MAG</div>
-          <div className="brand-title2">
-            <div className="brand-title2a">zine</div>
-            <div className="brand-title2b">Hub</div>
-          </div>
+          <p className='brand-title-para'>
+            <Link to="/" className="brand-title">
+              MAGzine
+            </Link>
+          </p>
         </section>
 
         <section className="middle-section">
