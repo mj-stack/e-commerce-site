@@ -15,7 +15,7 @@ export function Categories() {
         </Link>
       </div>
       <div className='accessories-center'>
-        <Link to="/clothes" className='link-text'>
+        <Link to="/accessories" className='link-text'>
           Accessories
         </Link>
       </div>
