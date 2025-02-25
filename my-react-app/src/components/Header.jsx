@@ -1,12 +1,9 @@
-import searchSvg from './assets/icons8-search-48.png';
-import profileIcon from './assets/profile.png';
-import cartIcon from './assets/icons8-cart-94.png';
-import { useContext } from 'react';
-import { CountContext } from './MainContent';
+import './Header.css'
+import searchSvg from '../assets/icons8-search-48.png';
+import profileIcon from '../assets/profile.png';
+import cartIcon from '../assets/icons8-cart-94.png';
 
 function Header() {
-
-  const count = useContext(CountContext);
 
   return(
     <>

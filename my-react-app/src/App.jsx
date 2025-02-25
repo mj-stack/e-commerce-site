@@ -1,15 +1,14 @@
-import Header from "./Header";
-import MainContent from "./MainContent";
-import Footer from "./Footer";
+import { Routes, Route } from 'react-router'
+import HomePage from "./pages/HomePage"
 
 function App() {
   
 
   return (
     <>
-      <Header />
-      <MainContent />
-      <Footer />
+      <Routes>
+        <Route index element={<HomePage />} />
+      </Routes>
     </>
   )
 }

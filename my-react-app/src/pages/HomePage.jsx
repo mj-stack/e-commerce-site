@@ -1,25 +1,21 @@
-import shirtImg from './assets/white-tshirt.jpg'
-import jeansImg from './assets/ripped-jeans.jpg'
-import checkShirt from './assets/blue-checkshirt.jpg'
-import blackShirt from './assets/black-tshirt.jpg'
-import redCheckShirt from './assets/red-checkshirt.jpg'
-import blueJeans from './assets/blue-jeans.jpg'
-import yellowHoodie from './assets/yellow-hoodie.jpg'
-import blackTurtleneck from './assets/black-turtleneck.jpg'
-import React, { useState, createContext } from 'react';
+import './HomePage.css'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import shirtImg from '../assets/white-tshirt.jpg'
+import jeansImg from '../assets/ripped-jeans.jpg'
+import checkShirt from '../assets/blue-checkshirt.jpg'
+import blackShirt from '../assets/black-tshirt.jpg'
+import redCheckShirt from '../assets/red-checkshirt.jpg'
+import blueJeans from '../assets/blue-jeans.jpg'
+import yellowHoodie from '../assets/yellow-hoodie.jpg'
+import blackTurtleneck from '../assets/black-turtleneck.jpg'
 
-export const CountContext = createContext();
-
-function MainContent() {
-
-  let [count, setCount] = useState(0);
-
-  function AddItem() {
-    setCount(count++);
-  }
+function HomePage() {
 
   return(
     <>
+      <Header />
+
       <main className="mainContent">
         <div className='product-type'>
           <div className='clothes-center'>Clothes</div>
@@ -35,10 +31,8 @@ function MainContent() {
               <p className='item-title'>Plain White T-shirt</p>
               <p className='item-price'>Rs. 799</p>
               <div className='item-controls'>
-                <button className='fav-item'>Like it</button>
-                <button className='add-to-cart' onClick={AddItem} count={count}>
-                  <CountContext.Provider value={count}>Add to cart</CountContext.Provider>
-                </button>
+              <button className='fav-item'>Like it</button>
+              <button className='add-to-cart'>Add to cart</button>
               </div>
             </div>
           </div>
@@ -135,8 +129,10 @@ function MainContent() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
 
-export default MainContent;
+export default HomePage;
