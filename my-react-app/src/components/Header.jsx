@@ -3,8 +3,9 @@ import './Header.css'
 import searchSvg from '../assets/icons/icons8-search-48.png';
 import profileIcon from '../assets/icons/profile.png';
 import cartIcon from '../assets/icons/icons8-cart-94.png';
+import heartIcon from '../assets/icons/heart-icon.png'
 
-function Header() {
+function Header({ cartQuantity }) {
 
   return(
     <>
@@ -25,10 +26,16 @@ function Header() {
         </section>
 
         <section className="right-section">
-          <img className='profile-icon' src={profileIcon} alt="" />
+          <Link to="/account-login">
+            <img className='profile-icon' src={profileIcon} alt="" />
+          </Link>
+          <div className='heart-icon-div'>
+            <img className='heart-icon' src={heartIcon} alt="" />
+            <div className='heart-count'>0</div>
+          </div>
           <div className='cart-icon-div'>
             <img className='cart-icon' src={cartIcon} alt="" />
-            <div className='item-count'>0</div>
+            <div className='item-count'>{cartQuantity}</div>
           </div>
         </section>
       </header>

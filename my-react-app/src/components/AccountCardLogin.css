@@ -1,0 +1,73 @@
+.accounts-card-login {
+  height: 400px;
+  width: 400px;
+  border: 1px solid;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.email-input {
+  padding: 10px 15px;
+  min-width: 250px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.password-input-div {
+  position: relative;
+}
+
+.password-eye-img {
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.password-input {
+  padding: 10px 15px;
+  min-width: 250px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.login-button {
+  padding: 10px 15px;
+  min-width: 100px;
+  border-radius: 8px;
+  border: none;
+  background-color: #5050eb;
+  color: white;
+  cursor: pointer;
+}
+
+.login-button-text {
+  text-decoration: none;
+  color: white;
+}
+
+.sign-up-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-text {
+  cursor: pointer;
+  color: blue;
+  text-decoration: none;
+}
+
+.sign-up-text:hover {
+  border-bottom: 2px solid blue;
+}

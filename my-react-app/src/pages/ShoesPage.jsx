@@ -3,10 +3,15 @@ import Footer from '../components/Footer';
 import { Categories } from '../components/Categories';
 import './ShoesPage.css'
 
-export function ShoesPage() {
+export function ShoesPage({ cartQuantity, setCartQuantity }) {
+
+  function addItem() {
+    setCartQuantity(cartQuantity + 1)
+  }
+
   return(
     <>
-      <Header />
+      <Header cartQuantity={cartQuantity} />
       <Categories />
       
       <main className="mainContent">
@@ -20,7 +25,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 1599</p>
               <div className='item-controls'>
               <button className='fav-item'>Like it</button>
-              <button className='add-to-cart'>Add to cart</button>
+              <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>
@@ -33,7 +38,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 2599</p>
               <div className='item-controls'>
                 <button className='fav-item'>Like it</button>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>
@@ -46,7 +51,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 2199</p>
               <div className='item-controls'>
                 <button className='fav-item'>Like it</button>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>
@@ -59,7 +64,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 1799</p>
               <div className='item-controls'>
                 <button className='fav-item'>Like it</button>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>
@@ -72,7 +77,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 1599</p>
               <div className='item-controls'>
                 <button className='fav-item'>Like it</button>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>
@@ -85,7 +90,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 2599</p>
               <div className='item-controls'>
                 <button className='fav-item'>Like it</button>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>
@@ -98,7 +103,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 2999</p>
               <div className='item-controls'>
                 <button className='fav-item'>Like it</button>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>
@@ -111,7 +116,7 @@ export function ShoesPage() {
               <p className='item-price'>Rs. 2899</p>
               <div className='item-controls'>
                 <button className='fav-item'>Like it</button>
-                <button className='add-to-cart'>Add to cart</button>
+                <button className='add-to-cart' onClick={addItem}>Add to cart</button>
               </div>
             </div>
           </div>

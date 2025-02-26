@@ -1,0 +1,59 @@
+.accounts-card-div {
+  /* width: 100vw; */
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.accounts-card-signup {
+  height: 400px;
+  width: 400px;
+  border: 1px solid;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.name-input,
+.surname-input,
+.email-input2,
+.number-input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.name-input {
+  margin-right: 10px;
+  width: 130px;
+}
+.surname-input {
+  width: 130px;
+}
+
+.email-input2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+.number-input {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.signup-button {
+  padding: 10px 15px;
+  min-width: 100px;
+  border-radius: 8px;
+  border: none;
+  background-color: #5050eb;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
