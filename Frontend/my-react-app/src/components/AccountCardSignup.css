@@ -19,6 +19,13 @@
   align-items: center;
 }
 
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
 .name-input,
 .surname-input,
 .email-input2,

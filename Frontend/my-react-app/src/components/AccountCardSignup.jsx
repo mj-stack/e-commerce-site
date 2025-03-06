@@ -9,18 +9,20 @@ export function AccountCardSignup() {
       <AccountsPageHeader />
       <main className='accounts-card-div'>
         <div className='accounts-card-signup'>
-            <h1>Sign Up</h1>
-            <div>
-              <input className='name-input' type="text" placeholder='Name' />
-              <input className='surname-input' type="text" placeholder='Surname' />
-            </div>
-            <input className='email-input2' type="email" placeholder='Email' />
-            <input className='number-input' type="email" placeholder='Phone no.' />
-            <button className='signup-button'>
-              <Link className='signup-button' to="/">
-                Sign up
-              </Link>
-            </button>
+            <form className='signup-form'>
+              <h1>Sign Up</h1>
+              <div>
+                <input className='name-input' type="text" placeholder='Name' />
+                <input className='surname-input' type="text" placeholder='Surname' />
+              </div>
+              <input className='email-input2' type="email" placeholder='Email' />
+              <input className='number-input' type="email" placeholder='Phone no.' />
+              <button className='signup-button'>
+                <Link className='signup-button' to="/">
+                  Sign up
+                </Link>
+              </button>
+            </form>
             <div className='sign-up-div'>
               <span>
                 Already have an account?
