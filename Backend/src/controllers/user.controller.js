@@ -1,8 +1,4 @@
-const express = require('express');
-
-const userDetailsRouter = express.Router();
-
-userDetailsRouter.get('/api/products', (req, res, next) => {
+const userController = ((req, res, next) => {
   const products = [{
     id: 1,
     name: 'Plain White T-shirt',
@@ -47,4 +43,4 @@ userDetailsRouter.get('/api/products', (req, res, next) => {
   res.send(products)
 });
 
-module.exports = userDetailsRouter;
+export {userController}
